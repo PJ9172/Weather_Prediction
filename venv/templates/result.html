@@ -1,3 +1,10 @@
-<h2>Predicted Average Temperature:</h2>
-<p>{{.PredictedTavg}} °C</p>
-<a href="/predict-form">Try Again</a>
+{{define "content"}}
+<div class="text-center">
+    <h2 class="mb-4">🌤️ Predicted Average Temperature</h2>
+    <div class="alert alert-info display-6">
+        {{printf "%.2f" .PredictedTavg}} °C
+    </div>
+    <a href="/" class="btn btn-secondary mt-3">Predict for Another City</a>
+</div>
+{{end}}
+{{template "layout.html" .}}

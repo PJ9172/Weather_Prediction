@@ -28,4 +28,4 @@ model.fit(X_train, y_train)
 with open("model.pkl", "wb") as f:
     pickle.dump(model, f)
 
-print("✅ Enhanced model trained and saved as model.pkl")
+print("✅ Model trained and saved as model.pkl")

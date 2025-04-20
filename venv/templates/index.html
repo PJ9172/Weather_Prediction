@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Prediction</title>
-</head>
-<body>
-    <form action="/fetch" method="post">
-        <input type="text" placeholder="Enter City Name" name="city">
-        <input type="submit" value="Submit">
-    </form>
-</body>
-</html>
+{{define "content"}}
+<h2 class="mb-4">Auto-Fill Weather Data by City</h2>
+<form action="/autofill" method="POST" class="row g-3">
+    <div class="col-md-6">
+        <label class="form-label">Enter City</label>
+        <input name="city" type="text" class="form-control" placeholder="e.g. Pune" id="city" required>
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Auto Fill Form</button>
+    </div>
+</form>
+{{end}}
+{{template "layout.html" .}}

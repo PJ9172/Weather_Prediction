@@ -1,0 +1,30 @@
+{{define "content"}}
+<h2 class="mb-4">Predict Temperature</h2>
+
+<form action="/predict" method="POST" class="row g-3">
+    <div class="col-md-6">
+        <label class="form-label">Temp_min</label>
+        <input name="tmin" type="number" step="0.1" class="form-control" value="{{.tmin}}" readonly>
+    </div>
+    <div class="col-md-6">
+        <label class="form-label">Temp_max</label>
+        <input name="tmax" type="number" step="0.1" class="form-control" value="{{.tmax}}" readonly>
+    </div>
+    <div class="col-md-6">
+        <label class="form-label">Wind Speed</label>
+        <input name="wspd" type="number" step="0.1" class="form-control" value="{{.wspd}}" readonly>
+    </div>
+    <div class="col-md-6">
+        <label class="form-label">Pressure</label>
+        <input name="pres" type="number" step="0.1" class="form-control" value="{{.pres}}" readonly>
+    </div>
+    <div class="col-md-6">
+        <label class="form-label">Precipitation</label>
+        <input name="prcp" type="number" step="0.1" class="form-control" value="{{.prcp}}" readonly>
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-success">Predict</button>
+    </div>
+</form>
+{{end}}
+{{template "layout.html" .}}
