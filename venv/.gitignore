@@ -4,5 +4,7 @@
 .cfg
 /__pycache__
 /Lib
+/Scripts
 .env
 .exe
+.gitignore
