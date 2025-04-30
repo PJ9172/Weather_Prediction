@@ -1,11 +1,9 @@
-# Created by venv; see https://docs.python.org/3/library/venv.html
-.csv
-.pkl
-.cfg
-./__pycache__
-/__pycache__
-/Lib
-/Scripts
-.env
-.exe
-.gitignore
+*.csv
+*.pkl
+*.cfg
+*/__pycache__
+*/Lib
+*/Scripts
+*.env
+*.exe
+*.gitignore
