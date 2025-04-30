@@ -2,6 +2,7 @@
 .csv
 .pkl
 .cfg
+./__pycache__
 /__pycache__
 /Lib
 /Scripts
